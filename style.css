@@ -1238,6 +1238,101 @@ hr {
 	14.0 Buttons
 ================================================================== */
 
+.hover-photo {
+    display: none;
+}
+.hover-photo {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+.img-holder:hover .hover-photo {
+    display: block;
+}
+.img-holder img {
+    width:100%;
+}
+.img-holder:hover .rotate, .cont-close:hover, .toggle.close:hover {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 0.5;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-iteration-count: 0.5;
+    -moz-animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+.img-holder {
+    position: relative;
+    max-width:250px;
+    cursor: pointer;
+    /*margin-bottom:16px;*/
+}
+
+.plus {
+    position: absolute;
+    bottom:0px;
+    background:#00293f;
+    height:59px;
+    width:59px;
+    display: none;
+}
+
+.rotate {
+    position: absolute;
+    bottom:15px;
+    left:50%;
+    height:30px;
+    width:30px;
+    margin-left:-15px;
+    display: none;
+}
+
+.img-holder:hover .plus {
+    display: block;
+    z-index: 99;
+}
+
+
+.img-holder:hover .rotate {
+    display: block;
+    z-index: 39;
+}
+.btn-primary{
+	border:none;
+	color: #fff;
+    background-color: rgba(0,0,0,0.65);
+    border-radius: 0;
+    width:100%;
+    text-align: center;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+}
+.modal-backdrop {
+    position: relative;
+    z-index: 40;
+}
+.modal-dialog{
+	margin:25% auto;
+}
+.modal-content{
+	border-radius:0;
+	opacity:0.85;
+}
+.modal-title{
+	text-align: left;
+	color:#000;
+}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
