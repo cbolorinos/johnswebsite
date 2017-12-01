@@ -1273,7 +1273,7 @@ hr {
     position: relative;
     max-width:250px;
     cursor: pointer;
-    /*margin-bottom:16px;*/
+    margin: 10px auto;
 }
 
 .plus {
@@ -1323,11 +1323,19 @@ hr {
     z-index: 40;
 }
 .modal-dialog{
-	margin:25% auto;
+	margin:10% auto;
 }
 .modal-content{
 	border-radius:0;
-	opacity:0.85;
+	background-color:rgba(255,255,255,0.7);
+}
+.modal-body p{
+	color:#404040;
+	margin-top:30px;
+	font-size: 13px;
+}
+.modal-body{
+	background-color:#fff;
 }
 .modal-title{
 	text-align: left;
